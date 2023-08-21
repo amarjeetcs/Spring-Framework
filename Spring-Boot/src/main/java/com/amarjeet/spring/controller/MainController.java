@@ -2,6 +2,7 @@ package com.amarjeet.spring.controller;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -39,6 +40,13 @@ public class MainController {
 		List<Integer> list=List.of(12);
 		m.addAttribute("mylist", list);
 		return "condition";
+	}
+	
+	@GetMapping("/getDataBeta")
+	public Map<String, String> map()
+	{
+		return Map.of("Amarjeet","Bhopal");
+		
 	}
 
 }

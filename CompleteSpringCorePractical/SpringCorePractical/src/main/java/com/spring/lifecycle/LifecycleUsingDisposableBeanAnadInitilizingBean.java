@@ -3,7 +3,7 @@ package com.spring.lifecycle;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-public class Pepsi implements InitializingBean, DisposableBean{
+public class LifecycleUsingDisposableBeanAnadInitilizingBean implements InitializingBean, DisposableBean{
 	private double price;
 
 	public double getPrice() {
@@ -14,7 +14,7 @@ public class Pepsi implements InitializingBean, DisposableBean{
 		this.price = price;
 	}
 
-	public Pepsi() {
+	public LifecycleUsingDisposableBeanAnadInitilizingBean() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -25,12 +25,12 @@ public class Pepsi implements InitializingBean, DisposableBean{
 	}
 
 	public void afterPropertiesSet() throws Exception {
-		System.out.println("taking pepsi it is like init method....");
+		System.out.println("taking pepsi....");
 		
 	}
 
 	public void destroy() throws Exception {
-		System.out.println("destroing pepsi it is like destroy method....");
+		System.out.println("destroing pepsi....");
 		
 	}
 	

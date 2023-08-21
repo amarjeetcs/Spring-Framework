@@ -9,6 +9,13 @@ public class Person {
 		this.personId=personId;
 		this.personName=personName;
 	}
+	
+	public Person(String personName, int personId)
+	{
+		this.personId=personId;
+		this.personName=personName;
+	}
+
 
 	@Override
 	public String toString() {

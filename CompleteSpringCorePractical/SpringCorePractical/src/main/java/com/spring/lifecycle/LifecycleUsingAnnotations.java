@@ -3,7 +3,7 @@ package com.spring.lifecycle;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-public class Example {
+public class LifecycleUsingAnnotations {
 	private String subject;
 
 	public String getSubject() {
@@ -14,7 +14,7 @@ public class Example {
 		this.subject = subject;
 	}
 
-	public Example() {
+	public LifecycleUsingAnnotations() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -26,13 +26,13 @@ public class Example {
 	@PostConstruct
 	public void start()
 	{
-		System.out.println("starting services with annotations....");
+		System.out.println("starting services....");
 	}
 	
 	@PreDestroy
 	public void end()
 	{
-		System.out.println("ending services with annotaions....");
+		System.out.println("ending services....");
 	}
 
 }

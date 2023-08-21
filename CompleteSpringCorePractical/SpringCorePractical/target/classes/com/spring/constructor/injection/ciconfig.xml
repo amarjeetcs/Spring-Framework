@@ -7,8 +7,13 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean class="com.spring.constructor.injection.Person" name="person">
+<bean class="com.spring.constructor.injection.Person" name="person1">
 <constructor-arg value="sanjeet" type="String"/>
+<constructor-arg value="101"/>
+</bean>
+
+<bean class="com.spring.constructor.injection.Person" name="person2">
+<constructor-arg value="sanjeet" type="int"/>
 <constructor-arg value="101"/>
 </bean>
 
