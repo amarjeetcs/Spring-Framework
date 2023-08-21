@@ -29,7 +29,7 @@ public class LifecycleUsingAnnotations {
 		System.out.println("starting services....");
 	}
 	
-	@PreDestroy
+	@PreDestroy //this are the annotaions
 	public void end()
 	{
 		System.out.println("ending services....");
