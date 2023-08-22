@@ -17,7 +17,7 @@ public class SpringDataJpaApplication {
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(SpringDataJpaApplication.class, args);
 		UserRepository repo = context.getBean(UserRepository.class);
-
+		//
 		// saving single row into table
 		/*
 		 * User user=new User(); user.setId(100);

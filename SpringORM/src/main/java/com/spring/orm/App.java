@@ -10,10 +10,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.spring.orm.dao.StudentDao;
 import com.spring.orm.entity.Student;
 
-/**
- * Hello world!
- *
- */
 public class App {
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
