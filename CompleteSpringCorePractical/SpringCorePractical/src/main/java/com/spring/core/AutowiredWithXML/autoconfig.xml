@@ -9,7 +9,7 @@
     http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 	
 
-	<bean class="com.spring.core.AutowiredWithXML.Address" name="IloveYouSanjeet">
+	<bean name="IloveYouSanjeet" class="com.spring.core.AutowiredWithXML.Address">
 		<property name="Id" value="101"></property>
 		<property name="Name" value="Sanjeet"></property>
 		<property name="City" value="Bihar"></property>

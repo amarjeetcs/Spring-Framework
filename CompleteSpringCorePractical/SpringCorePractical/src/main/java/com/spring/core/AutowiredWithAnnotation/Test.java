@@ -11,7 +11,7 @@ public class Test {
 		//Address ad = (Address) context.getBean("temp1");
 		//System.out.println(ad);
 
-		Emp emp=(Emp) context.getBean("emp1");
+		Emp1 emp=(Emp1) context.getBean("emp1");
 		System.out.println(emp);
 
 	}

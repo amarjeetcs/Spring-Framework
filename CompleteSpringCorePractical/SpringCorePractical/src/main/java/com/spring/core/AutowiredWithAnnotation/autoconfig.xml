@@ -13,15 +13,19 @@
 		<property name="street" value="turki"></property>
 		<property name="city" value="bihar"></property>
 	</bean>
-	
+	<!-- 
 	<bean class="com.spring.core.AutowiredWithAnnotation.Address" name="temp2">
 		<property name="street" value="kudhani"></property>
 		<property name="city" value="bihar"></property>
+	</bean> -->
+	
+	<bean class="com.spring.core.AutowiredWithAnnotation.Address1" name="temp3">
+		<property name="street" value="Lahladpur"></property>
+		<property name="city" value="bihar"></property>
 	</bean>
-
 
 	<!-- <bean class="com.spring.auto.wire.Emp" name="emp1" autowire="byName"/> -->
 	<!-- <bean class="com.spring.auto.wire.Emp" name="emp1" autowire="byType"/> -->
-	<bean class="com.spring.core.AutowiredWithAnnotation.Emp" name="emp1"></bean>
+	<bean class="com.spring.core.AutowiredWithAnnotation.Emp1" name="emp1"></bean>
 
 </beans>

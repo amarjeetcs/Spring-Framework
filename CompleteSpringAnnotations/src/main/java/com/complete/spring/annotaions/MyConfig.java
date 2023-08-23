@@ -7,6 +7,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
+
 
 @Configuration
 @ComponentScan(basePackages = {"com.mypackage"})
@@ -41,5 +44,7 @@ public class MyConfig {
 		System.out.println("creating date object");
 		return new Date();
 	}
+	
+	
 
 }

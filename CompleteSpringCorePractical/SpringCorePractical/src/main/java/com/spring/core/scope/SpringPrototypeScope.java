@@ -1,5 +1,8 @@
 package com.spring.core.scope;
 
+import org.springframework.context.annotation.Scope;
+
+
 public class SpringPrototypeScope {
 	private int id;
 	private String name;

@@ -17,26 +17,23 @@ import com.mypackage.Dog;
 
 public class CompleteSpringAnnotationsApplication implements CommandLineRunner {
 	@Autowired
-	//@Qualifier("student2")
+	// @Qualifier("student2")
 	private Studnet studnet;
 
 	@Autowired
 	private Date date;
-	
-	
+
 	@Autowired
 	private Emp emp;
-	
-	
+
 	@Autowired
 	private Dog dog;
-	
-	
+
 	public static void main(String[] args) {
-		
+
 		SpringApplication.run(CompleteSpringAnnotationsApplication.class, args);
 		System.out.println("Hell Beta");
-		
+
 	}
 
 	@Override
@@ -44,9 +41,7 @@ public class CompleteSpringAnnotationsApplication implements CommandLineRunner {
 		this.studnet.studying();
 		this.emp.whatIsYourName();
 		this.dog.getDogName();
-		
-		
-		
+
 	}
 
 }
