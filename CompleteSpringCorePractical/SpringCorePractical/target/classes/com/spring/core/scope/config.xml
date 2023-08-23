@@ -7,18 +7,22 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean class="com.spring.constructor.injection.Person"
-		name="person1">
-		<constructor-arg value="sanjeet" type="String" />
-		<constructor-arg value="101" />
+	<!-- Value as tag example -->
+	<bean class="com.spring.core.scope.SpringPrototypeScope"
+		name="SpringScope" scope="prototype"> 
+		<property name="id">
+			<value>101</value>
+		</property>
+
+		<property name="name">
+			<value>Amarjeet Singh</value>
+		</property>
+
+		<property name="city">
+			<value>Bihar</value>
+		</property>
 	</bean>
 
-	<bean class="com.spring.constructor.injection.Person"
-		name="person2">
-		<constructor-arg value="sanjeet" type="int" />
-		<constructor-arg value="101" />
-	</bean>
-	
-	<!--we can use bean name as well as bean id -->
+
 
 </beans>

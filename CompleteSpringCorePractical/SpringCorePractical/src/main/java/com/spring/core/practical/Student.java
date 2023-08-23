@@ -1,5 +1,4 @@
 package com.spring.core.practical;
-
 public class Student {
 	private int StudentID;
 	private String StudentName;
@@ -43,8 +42,7 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "[StudentID=" + StudentID + ", StudentName=" + StudentName + ", StudentCity=" + StudentCity
-				+ "]";
+		return "[StudentID=" + StudentID + ", StudentName=" + StudentName + ", StudentCity=" + StudentCity + "]";
 	}
 
 }
